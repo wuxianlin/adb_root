@@ -1,0 +1,6 @@
+#https://android.googlesource.com/platform/system/sepolicy/+/master/private/adbd.te
+#userdebug_or_eng
+allow adbd adbd process setcurrent
+allow adbd su process dyntransition
+#https://android.googlesource.com/platform/system/sepolicy/+/master/private/su.te
+allow su * * *
